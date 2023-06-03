@@ -4,7 +4,7 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "AoE-Guildhall",
-    "slug": "AoE-Guildhall"
+    "name": "AoE Guildhall",
+    "slug": "aoe-guildhall"
   }
 }
