@@ -1,14 +1,13 @@
-# Expo Router Example
+# AoE Guildhall :chess_pawn:
+An app for the Age of Empires community.
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
-
-## 🚀 How to use
-
+## Development :hammer_and_wrench:
+### 🚀 Setup
 ```sh
-npx create-expo-app -e with-router
+npx expo install
 ```
 
-## 📝 Notes
-
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
+### 📱 Run
+```sh
+npx expo start
+```
