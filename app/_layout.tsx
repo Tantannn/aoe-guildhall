@@ -5,6 +5,7 @@ import { useFonts } from "expo-font";
 import config from "../tamagui.config";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet } from "react-native";
+import Header from "../components/Header";
 
 export default function HomeLayout() {
   const [loaded, error] = useFonts({
@@ -23,14 +24,14 @@ export default function HomeLayout() {
   return (
     <TamaguiProvider config={config}>
       <Theme name="light">
-            <SafeAreaView style={styles.container}>
-              <StackRouter
-                initialRouteName="index"
-                screenOptions={{
-                  headerShown: true,
-                }}
-              />
-            </SafeAreaView>
+        <SafeAreaView style={styles.container}>
+          <StackRouter
+            initialRouteName="home"
+            screenOptions={{
+              header: (props) => <Header {...props} />, 
+            }}
+          />
+        </SafeAreaView>
       </Theme>
     </TamaguiProvider>
   );
