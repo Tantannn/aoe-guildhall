@@ -1,10 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native';
+import { Image, Text, View } from "react-native";
 
 export default function Header() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+    <View>
+      <Image
+      style={{ width: 50, height: 50 }}
+        source={{ uri: "https://reactnative.dev/img/tiny_logo.png" }}
+      />
+      <Text>Hello</Text>
     </View>
   )
 }

@@ -16,6 +16,7 @@ export default function HomeScreen() {
         >
           Capture
         </Button>
+      <Link href="/vil">Vil Reminder</Link>
     </YStack>
   );
 }
