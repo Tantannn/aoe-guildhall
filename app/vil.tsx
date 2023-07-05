@@ -15,18 +15,26 @@ import { Audio } from "expo-av";
 const image = {
   uri: "https://docs.expo.dev/static/images/tutorial/splash.png",
 };
+
+type VillagerReminder = {
+  mode: VillagerReminder;
+  ringSound?: string;
+  Timer: number
+  unloadAsync: any
+}
+
 const VillagerReminder = () => {
   const [timer, setTimer] = useState(20);
   const [start, setStart] = useState(false);
   const [sound, setSound] = useState();
 
   var firstStart = useRef(true);
-  var tick = useRef();
+  var tick = useRef(0);
   var vilProductTime = useRef(20);
   //sound
   async function playSound() {
     console.log("Loading Sound");
-    const { ringSound } = await Audio.Sound.createAsync(
+    const { ringSound } : any = await Audio.Sound.createAsync(
       require("../assests/sound/blyat.mp4")
     );
     setSound(ringSound);
